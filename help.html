@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Better CodeMettle</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>Better Codemettle</h2>
+        <ul>
+            <li><a href="/home/tyler/Documents/Project/home.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="/home/tyler/Documents/Project/connections.html"><i class="fas fa-user"></i>Connections</a></li>
+            <li><a href="/home/tyler/Documents/Project/deployment.html"><i class="fas fa-address-card"></i>Deployment</a></li>
+            <li><a href="/home/tyler/Documents/Project/database.html"><i class="fas fa-project-diagram"></i>Database</a></li>
+            <li><a href="/home/tyler/Documents/Project/topology.html"><i class="fas fa-blog"></i>Topology</a></li>
+            <li><a href="/home/tyler/Documents/Project/modems.html"><i class="fas fa-address-book"></i>Modems</a></li>
+            <li><a href="/home/tyler/Documents/Project/interfaces.html"><i class="fas fa-map-pin"></i>Interfaces</a></li>
+        </ul> 
+    </div>
+    <div class="main_content">
+        <div class="header"><h1><center>Helpdesk</center></h1></div>  
+        <div class="info">
+			<div><h1><center>Proper Setup and Power Up</center></h1></div>	
+			<div>NOTE: For KU Feed, make sure your cables running to the TLNB are ran BEHIND the HPA, if not when the TLNB polarizes, the HPA will watch the cables and rip them off and bend the waveguide.</div>
+			<div>For shore power, make sure you have the shore power cable connected on the right hand side. It'll be followed to a power turtle and then followed to a circuit breaker box.</div>
+			<div>To setup the VSAT-L for generator power, open the side panel circuit breaker cover, and turn on the 12v switch to check if you have a sufficient amount of fuel. After, hold the generator on button. It will start to turn over and eventually start running. With the generaor running, turn the electrical switch on the generator to on.</div>
+			<div> Now, that the VSAT-L is running, go to the side circuit breaker panel and turn on the L1/L2 switch and monior the instrument panel to see if you are fianlly getting voltage readings. Sometimes, his may take up to a minute on generator power. After this, flip every switch up to the UPS output breaker switch. With switches 1 throught 4 in the up position, go to the UPS and flip the first switch and wait for a beep. After the beep, flip the second switch. With both switches on the UPS in the on position, continue to flip the rest of the switches on the side panel circuit breaker. Now, turn on the ACU and PDU on the left hand rack. Ensure you are in BAND 2 for CONUS and reset the fault in local mode on the RMR. Witch Rack 1 on, continue with Rack 2. Now the VSAT-L is fully started, to turn off, repeat every step backwards, but when you get to the UPS, while turning off you will flip both switches at the same time.</div>
+			<div><h1><center>Troubleshooting and Testing Equipment</center></h1></div>
+			<div>Necessary equipment for troubleshooting the VSAT-L is a tool kit, a large and small Spectrum Analyzer, a multimeter, and a cable adapter kit.</div>
+			<div>To setup the large spectrum analyzer, on the side with the circuit breaker panel, run the power cable for the spectrum analyzer behind the A2 rack and into the house power port inside the VSAT-L.</div>
+			<div>Make sure the power button on the back of the spectrum analyzer is set to the on position then press the start-up buton at the front of the equipment. For testing transmit out of the HPA, setup a cable long enough to reach from the spectrum analyzer to the HPA. There is an adapter that comes with the large spectrum analyzer to put in the front port to fit the tip of a standard NTYPE RF tip. For KU and X Band, you will use a standard N-TYPE adapter to connect the two devices via the RF/RX sample port. For X band, you will use the mini N-TYPE adapter. Ensure the testing cable is long enough to reach the HPA whilst elevated at 15 degrees.</div>
+			<div> Down below is a list of frequencies you will be looking for while testing transmit out at <u>1 GHz.</u></div>
+			<div><center><h3>KU - 13.8 GHz</h3></center></div>
+			<div><center><h3>KA - 30.0 GHz</h3></center></div>			<div><center><h3>X - 7.95 GHz</h3></center></div>
+			<div>To get these numbers, you combine the BUC LO frequency of your band with the frequency you'll be sending out of your modem.</div>
+			<div>To test the 10 MHz going into the HPA, test the IF Cable going into the HPA, not the port.</div>
+			<div><h1><center>GUIs and Networking</center></h1></div>
+			<div>To see if you have any established connections, open terminal or command prompt and use the command</div>
+			<div><center><h2>arp -a</h2></center>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
